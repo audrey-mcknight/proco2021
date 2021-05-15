@@ -1,3 +1,5 @@
+# find contiguous partitions of a list
+# eg [1,2,3,4] = [[[1,2,3,4]], [[1],[2,3,4]], [[1],[2,3],[4]], [[1],[2],[3,4]], etc
 def partition_list(a_list):
     partitions = [[a_list]]
     for n in range(1, 2 ** (len(a_list) - 1)):
